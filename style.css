@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
 }
 
 .container {
@@ -28,7 +29,6 @@ body {
 
 p {
     color: #717275;
-    font-size: 1rem;
 }
 
 a {
@@ -61,7 +61,6 @@ a {
 }
 
 .top-bar-title {
-
     display: flex;
 }
 
@@ -95,4 +94,18 @@ a {
 .social-icons ul li a:hover {
     transform: scale(1.2);
     color: blue;
+}
+
+/* MOBILE RESPONSIVE DEGISN */
+@media only screen and (max-width: 768px) {
+    .top-bar-container{
+        width: 100%;
+    }
+    .top-bar-title{
+        flex-direction: column;
+
+    }
+    .social-icons{
+        display: none;
+    }
 }
