@@ -27,6 +27,10 @@ body {
     color: #5bc1ac;
 }
 
+img {
+    max-width: 100%;
+}
+
 p {
     color: #717275;
 }
@@ -97,21 +101,42 @@ a {
 }
 
 /* NAVBAR */
-.logo {
-    width: 50px;
-    height: 50px;
-    margin-left: 20px;
-}
-
 .navBar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 10px 60px;
 }
 
-.nav-title {
-    font-size: 25px;
-    font-weight: 600;
+.nav-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo {
+    width: 80px;
+}
+
+.nav-title h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #5bc1ac;
+    letter-spacing: 0.5px;
+}
+
+.nav-sub-title {
+    font-size: 0.8rem;
+    display: block;
+    margin: auto;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
 }
 
 #nav-toggler {
@@ -128,15 +153,16 @@ a {
 
 .navBar ul li {
     list-style: none;
-    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .navBar ul li a {
     font-size: 16px;
     color: #3a3a3a;
-    font-weight: 600;
+    font-weight: 400;
     position: relative;
     padding-bottom: 6px;
+    letter-spacing: 0.5px;
 }
 
 .navBar ul li a::after {
@@ -149,19 +175,23 @@ a {
     transition: .4s ease-in-out;
 }
 
+/* HOVER EFFECT */
 .navBar ul li a:hover::after {
     width: 100%;
 }
 
 
 @media (max-width: 700px) {
+    .container {
+        width: 100%;
+    }
+
     .top-bar-container {
         width: 100%;
     }
 
     .top-bar-title {
         flex-direction: column;
-
     }
 
     .social-icons {
@@ -169,7 +199,8 @@ a {
     }
 
     .navBar {
-        justify-content: space-around;
+        margin: 5px 20px;
+        justify-content: space-between;
     }
 
     .nav-toggler-icon {
@@ -177,22 +208,25 @@ a {
     }
 
     #nav-toggler:checked~ul {
-        transform: translateY(40px);
-        visibility: visible;
+        left: 0%;
+        box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 15%);
     }
 
     .navBar ul {
+        padding: 15px 0px;
         position: fixed;
-        left: 0;
-        top: 80px;
+        top: 160px;
+        left: -100%;
+        height: auto;
         width: 100%;
-        flex-direction: column;
-        gap: 20px;
-        padding: 20px;
-        align-items: flex-start;
-        box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 15%);
-       visibility: hidden;
-        transform-origin: top;
-        transition: all .5s;
+        display: block;
+        text-align: center;
+        background-color: white;
+        transition: all 0.5s ease-in-out;
+        
+    }
+
+    .navBar ul li {
+        margin-bottom: 10px;
     }
 }
