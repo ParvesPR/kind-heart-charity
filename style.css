@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1rem;
 }
 
@@ -16,8 +16,8 @@ body {
 }
 
 .title {
-    font-size: 2.5rem;
-    font-weight: 800;
+    font-size: 2.8rem;
+    font-weight: 600;
     color: #5a6f80;
 }
 
@@ -72,7 +72,6 @@ a {
     margin-right: 20px;
     color: #fff;
     font-weight: 300;
-    letter-spacing: 1px;
 }
 
 .top-bar-title p span {
@@ -122,7 +121,6 @@ a {
     font-size: 1.5rem;
     font-weight: 400;
     color: #5bc1ac;
-    letter-spacing: 0.5px;
 }
 
 .nav-sub-title {
@@ -130,7 +128,6 @@ a {
     display: block;
     margin: auto;
     width: 100%;
-    letter-spacing: 1px;
 }
 
 .logo {
@@ -149,11 +146,13 @@ a {
 
 .navBar ul {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navBar ul li {
     list-style: none;
-    margin-right: 30px;
+    margin-right: 40px;
 }
 
 .navBar ul li a {
@@ -162,7 +161,6 @@ a {
     font-weight: 400;
     position: relative;
     padding-bottom: 6px;
-    letter-spacing: 0.5px;
 }
 
 .navBar ul li a::after {
@@ -175,12 +173,41 @@ a {
     transition: .4s ease-in-out;
 }
 
+.nav-button {
+    border: 2px solid #597081;
+    padding: 7px 30px;
+    border-radius: 25px;
+    font-weight: 400;
+    display: inline-block;
+    transition: 0.5s;
+}
+
 /* HOVER EFFECT */
 .navBar ul li a:hover::after {
     width: 100%;
 }
 
+.nav-button:hover {
+    transform: scale(1.2);
+}
 
+/* WELCOME SECTION CSS */
+.welcome-section .title {
+    text-align: center;
+    padding: 1.3rem;
+}
+.welcome-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    justify-items: center;
+}
+.welcome-grid img{
+    display: block;
+    margin: auto;
+}
+
+/* RESPONSIVE DESIGN FOR MOBILE DEVICES */
 @media (max-width: 700px) {
     .container {
         width: 100%;
@@ -219,14 +246,16 @@ a {
         left: -100%;
         height: auto;
         width: 100%;
+        margin: auto;
         display: block;
         text-align: center;
         background-color: white;
         transition: all 0.5s ease-in-out;
-        
+
     }
 
     .navBar ul li {
         margin-bottom: 10px;
+        margin-right: 0px;
     }
 }
