@@ -12,7 +12,11 @@ body {
 
 .container {
     width: 1140px;
-    margin: 60px auto;
+    margin: 80px auto;
+}
+
+strong {
+    font-weight: 600;
 }
 
 .title {
@@ -194,21 +198,38 @@ a {
 /* WELCOME SECTION CSS */
 .welcome-section .title {
     text-align: center;
-    padding: 1.3rem;
+    padding: 2rem;
 }
-.welcome-grid{
+
+.welcome-grid {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     justify-items: center;
+    text-align: center;
+    padding: 20px 0px;
 }
-.welcome-grid img{
+
+.welcome-grid img {
     display: block;
     margin: auto;
+    margin-bottom: 20px;
 }
+
+.welcome-section .text-bold {
+    font-size: 1.5rem;
+    color: #5bc1ac;
+    font-weight: 300;
+    padding: 0px 15px;
+}
+
 
 /* RESPONSIVE DESIGN FOR MOBILE DEVICES */
 @media (max-width: 700px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
     .container {
         width: 100%;
     }
@@ -257,5 +278,17 @@ a {
     .navBar ul li {
         margin-bottom: 10px;
         margin-right: 0px;
+    }
+
+    /* WELCOME SECTION RESPONSIVE */
+    .welcome-grid {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 60px;
+    }
+    .welcome-grid img {
+        margin-bottom: 15px;
+    }
+    .welcome-section .text-bold {
+        font-size: 1.4rem;
     }
 }
