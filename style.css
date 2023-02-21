@@ -26,8 +26,8 @@ strong {
 }
 
 .sub-title {
-    font-size: 1.5rem;
-    font-weight: 800;
+    font-size: 1.4rem;
+    font-weight: 600;
     color: #5bc1ac;
 }
 
@@ -196,7 +196,7 @@ a {
 }
 
 /* WELCOME SECTION CSS */
-.welcome-section .title {
+.feature .title {
     text-align: center;
     padding: 2rem;
 }
@@ -226,7 +226,7 @@ a {
     transition: 0.5s ease;
 }
 
-.welcome-section .text-bold {
+.feature .text-bold {
     font-size: 1.5rem;
     color: #5bc1ac;
     font-weight: 300;
@@ -243,6 +243,33 @@ a {
     margin-bottom: 0px;
 }
 
+/* OUR MISSION SECTION */
+.our-mission {
+    padding: 40px 0px;
+    background-color: #F0F8FF;
+}
+
+.our-mission-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.our-mission-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+.our-mission-title{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 25px;
+}
+.mission-text{
+    font-weight: 300;
+    margin-top: 15px;
+}
 
 /* RESPONSIVE DESIGN FOR MOBILE DEVICES */
 @media (max-width: 700px) {
@@ -305,10 +332,11 @@ a {
         grid-template-columns: repeat(1, 1fr);
         row-gap: 40px;
     }
+
     .feature-card {
         text-align: center;
         transition: all 0.5s ease;
-        width: 250px;
+        width: 95%;
         min-height: 230px;
         padding: 5px;
     }
@@ -317,7 +345,7 @@ a {
         margin-bottom: 15px;
     }
 
-    .welcome-section .text-bold {
+    .feature .text-bold {
         font-size: 1.4rem;
     }
 }
