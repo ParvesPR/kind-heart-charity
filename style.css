@@ -316,6 +316,22 @@ a {
     color: #5bc1ac;
 }
 
+/* FOUNDER SECTION CSS */
+.founder-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.founder-image img {
+    display: block;
+    border-radius: 25px;
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+}
+
 /* RESPONSIVE DESIGN FOR MOBILE DEVICES */
 @media (max-width: 700px) {
     .title {
@@ -394,8 +410,9 @@ a {
     .feature .text-bold {
         font-size: 1.4rem;
     }
+
     /* OUR MISSION SECTION RESPONSIVE */
-    .our-goal-count{
+    .our-goal-count {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
