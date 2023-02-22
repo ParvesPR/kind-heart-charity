@@ -307,13 +307,13 @@ a {
     text-align: center;
 }
 
-.our-goal-count h1, p {
-    color: #5bc1ac;
-
+.our-goal-count {
+    text-align: center;
 }
 
 .our-goal-count p {
     margin-bottom: 20px;
+    color: #5bc1ac;
 }
 
 /* RESPONSIVE DESIGN FOR MOBILE DEVICES */
@@ -324,6 +324,7 @@ a {
 
     .container {
         width: 100%;
+        padding: 0px 10px;
     }
 
     .top-bar-container {
@@ -373,7 +374,7 @@ a {
     }
 
     /* WELCOME SECTION RESPONSIVE */
-    .feature-card-wrapper, .our-mission-wrapper {
+    .feature-card-wrapper, .our-mission-wrapper, .our-goal {
         grid-template-columns: repeat(1, 1fr);
         row-gap: 40px;
     }
@@ -381,7 +382,7 @@ a {
     .feature-card {
         text-align: center;
         transition: all 0.5s ease;
-        width: 95%;
+        width: 100%;
         min-height: 230px;
         padding: 5px;
     }
@@ -392,5 +393,10 @@ a {
 
     .feature .text-bold {
         font-size: 1.4rem;
+    }
+    /* OUR MISSION SECTION RESPONSIVE */
+    .our-goal-count{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
