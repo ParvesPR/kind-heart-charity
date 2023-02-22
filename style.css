@@ -262,11 +262,14 @@ a {
     border-radius: 25px;
 }
 
-.our-mission-title, .our-goal-content {
+.our-mission-title {
+    margin-bottom: 20px;
+}
+
+.our-mission-title, .our-goal-content, .our-goal-count {
     background-color: #fff;
     padding: 40px;
     border-radius: 25px;
-    margin-bottom: 30px;
 }
 
 .mission-text {
@@ -302,6 +305,15 @@ a {
     line-height: 25px;
     border-radius: 50%;
     text-align: center;
+}
+
+.our-goal-count h1, p {
+    color: #5bc1ac;
+
+}
+
+.our-goal-count p {
+    margin-bottom: 20px;
 }
 
 /* RESPONSIVE DESIGN FOR MOBILE DEVICES */
