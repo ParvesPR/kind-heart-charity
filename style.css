@@ -43,15 +43,18 @@ a {
     text-decoration: none;
 }
 
-.button {
-    background: #4591cf;
+.custom-button {
+    background: #597081;
     border: 2px solid transparent;
     border-radius: 50px;
     color: #fff;
     font-size: 1.1rem;
     font-weight: 400;
     line-height: normal;
-    padding: .93rem 1.56rem;
+    padding: .90rem 1.6rem;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 /* TOP BAR CSS */
@@ -417,6 +420,21 @@ a {
     align-items: center;
 }
 
+.donation-btn {
+    color: #44525D;
+    font-weight: 300;
+    margin-right: 20px;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+/* HOVER EFFECT */
+.donation-btn:hover{
+    color: #57B9A5;
+}
+.custom-button:hover{
+    background: #57B9A5;
+}
+
 /* RESPONSIVE DESIGN FOR MOBILE DEVICES */
 @media (max-width: 700px) {
     .title {
@@ -528,6 +546,27 @@ a {
 
     .founder-about {
         flex-basis: 100%;
+    }
+
+    /* VOLUNTEER SECTION RESPONSIVE */
+    .volunteer-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: flex-start;
+    }
+
+    .volunteer::before {
+        content: "";
+        top: -100px;
+        left: -30px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .volunteer::after {
+        content: "";
+        bottom: -80px;
+        width: 80px;
+        height: 80px;
     }
 
 }
