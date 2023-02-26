@@ -328,10 +328,6 @@ a {
     flex-basis: 40%;
 }
 
-.founder-image {
-    flex-basis: 40%;
-}
-
 .founder-about {
     flex-basis: 30%;
 }
@@ -375,21 +371,65 @@ a {
     margin-top: 15px;
     transition: 0.5s;
 }
+
 /* HOVER EFFECT */
-.founder-icons a:hover{
+.founder-icons a:hover {
     background: #57B9A5;
     border: 1px solid #57B9A5;
+}
+
+/* VOLUNTEER SECTION CSS */
+.volunteer {
+    background: #F0F8FF;
+    position: relative;
+    overflow: hidden;
+}
+
+.volunteer::before {
+    content: "";
+    background-color: #5bc1ac;
+    border-radius: 50%;
+    position: absolute;
+    top: -100px;
+    left: -30px;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+}
+
+.volunteer::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border: 20px solid #597081;
+    left: 0;
+    bottom: -100px;
+    margin: auto;
+    right: 0;
+    border-radius: 50%;
+}
+
+.volunteer-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
 }
 
 /* RESPONSIVE DESIGN FOR MOBILE DEVICES */
 @media (max-width: 700px) {
     .title {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+    }
+
+    .sub-title {
+        font-size: 1.2rem;
     }
 
     .container {
         width: 100%;
-        padding: 0px 10px;
+        padding: 0px 15px;
     }
 
     .top-bar-container {
@@ -465,4 +505,29 @@ a {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .our-goal-count .title {
+        font-size: 2.5rem;
+    }
+
+    /* FOUNDER SECTION RESPONSIVE */
+    .founder-wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+        align-items: center;
+    }
+
+    .founder-image {
+        flex-basis: 100%;
+    }
+
+    .founder-image img {
+        width: 400px;
+    }
+
+    .founder-about {
+        flex-basis: 100%;
+    }
+
 }
