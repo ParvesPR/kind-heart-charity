@@ -26,7 +26,7 @@ strong {
 }
 
 .sub-title {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 600;
     color: #5bc1ac;
 }
@@ -36,6 +36,7 @@ img {
 }
 
 p {
+    font-weight: 300;
     color: #717275;
 }
 
@@ -55,6 +56,25 @@ a {
     letter-spacing: 0.5px;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
+}
+
+.custom-button2 {
+    display: block;
+    background: #5A6F80;
+    border-radius: 0px 0px 20px 20px;
+    text-align: center;
+    color: #fff;
+    padding: 15px 0px;
+    transition: all .3s;
+}
+
+/* HOVER EFFECT */
+.custom-button:hover {
+    background-color: #57B9A5;
+}
+
+.custom-button2:hover {
+    background-color: #57B9A5;
 }
 
 /* TOP BAR CSS */
@@ -78,7 +98,6 @@ a {
 .top-bar-title p {
     margin-right: 20px;
     color: #fff;
-    font-weight: 300;
 }
 
 .top-bar-title p span {
@@ -276,7 +295,6 @@ a {
 }
 
 .mission-text {
-    font-weight: 300;
     margin-top: 15px;
 }
 
@@ -336,12 +354,10 @@ a {
 }
 
 .founder-position {
-    font-weight: 300;
     margin-bottom: 20px;
 }
 
 .founder-about p {
-    font-weight: 300;
     color: rgb(113, 114, 117);
     margin-bottom: 15px;
 }
@@ -433,21 +449,50 @@ a {
     color: #57B9A5;
 }
 
-.custom-button:hover {
-    background: #57B9A5;
+/* OUR CAUSES SECTION CSS */
+.our-causes .title {
+    text-align: center;
+    margin-bottom: 35px;
 }
 
-/* OUR CAUSES SECTION CSS */
 .causes-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-    gap: 25px;
-}
-.our-cause-img{
-    border-radius: 20px 20px 0px 0px;
+    gap: 30px;
 }
 
+.our-cause-img {
+    border-radius: 20px 20px 0px 0px;
+}
+.our-cause-card {
+    transition: 0.5s;
+}
+.causes-content {
+    padding: 30px;
+}
+
+.causes-content .sub-title {
+    margin-bottom: 15px;
+}
+.progress-bar{
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+    height: 4px;
+    background-color: #E9EAEB;
+    border-radius: 10px;
+}
+.progress {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+/* HOVER EFFECT */
+.our-cause-card:hover {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+    border-radius: 20px;
+}
 /* RESPONSIVE DESIGN FOR MOBILE DEVICES */
 @media (max-width: 700px) {
     .title {
