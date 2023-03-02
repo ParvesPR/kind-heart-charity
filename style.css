@@ -550,6 +550,25 @@ a {
     border-radius: 20px;
 }
 
+/* ABOUT VOLUNTEERING SECTION CSS */
+.about-volunteering {
+    background-color: #5A6F80;
+}
+
+.about-volunteering-wrapper {
+    display: flex;
+}
+
+.about-volunteering h1 {
+    color: white;
+}
+
+.volunteering-form {
+    background: white;
+}
+
+.form-title {}
+
 /* RESPONSIVE DESIGN FOR MOBILE DEVICES */
 @media (max-width: 700px) {
     .title {
