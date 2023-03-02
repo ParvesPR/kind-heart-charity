@@ -552,22 +552,110 @@ a {
 
 /* ABOUT VOLUNTEERING SECTION CSS */
 .about-volunteering {
+    position: relative;
     background-color: #5A6F80;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+
+.about-volunteering::after {
+    content: "";
+    background: #5BC1AC;
+    position: absolute;
+    right: -70px;
+    bottom: -145px;
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
 }
 
 .about-volunteering-wrapper {
     display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .about-volunteering h1 {
     color: white;
+    margin-bottom: 20px;
 }
 
 .volunteering-form {
     background: white;
+    padding: 40px;
+    border-radius: 25px;
 }
 
-.form-title {}
+.form-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.custom-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    column-gap: 20px;
+}
+
+.custom-form input, textarea {
+    background: #F0F8FF;
+    border: none;
+    outline: none;
+    padding: 15px 10px;
+    margin: 10px auto;
+    border-radius: 7px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.custom-form input::placeholder, textarea {
+    font-size: 0.9rem;
+    color: #57B9A5;
+    font-weight: 300;
+}
+
+.volunteering-form .custom-button {
+    display: block;
+    width: 100%;
+}
+
+.about-volunteer {
+    display: flex;
+    flex-direction: column;
+}
+
+.volunteer-content {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.volunteer-img {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: auto;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.about-volunteer-title {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.about-volunteer-text {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 200;
+}
 
 /* RESPONSIVE DESIGN FOR MOBILE DEVICES */
 @media (max-width: 700px) {
