@@ -662,6 +662,40 @@ a {
     padding: 0px 25px;
 }
 
+/* LATEST NEWS SECTION CSS */
+.latest-news-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.news-block {
+    position: relative;
+    overflow: hidden;
+}
+
+.news-block img {
+    border-radius: 25px;
+}
+
+.category-link {
+    position: absolute;
+    background: #5A6F80;
+    border-radius: 0px 0px 25px 25px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 10px 20px;
+}
+
+.category-link a {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+
 /* RESPONSIVE DESIGN FOR MOBILE DEVICES */
 @media (max-width: 700px) {
     .title {
