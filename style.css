@@ -440,6 +440,8 @@ a {
     color: #44525D;
     font-weight: 300;
     margin-right: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
     font-size: 1rem;
     transition: 0.3s;
 }
@@ -563,15 +565,16 @@ a {
     content: "";
     background: #5BC1AC;
     position: absolute;
-    right: -70px;
-    bottom: -145px;
+    border-radius: 50%;
+    bottom: -110px;
+    right: -80px;
     width: 350px;
     height: 350px;
-    border-radius: 100%;
 }
 
 .about-volunteering-wrapper {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 20px;
 }
@@ -614,13 +617,14 @@ a {
 
 .custom-form input::placeholder, textarea {
     font-size: 0.9rem;
-    color: #57B9A5;
+    color: #44525D;
     font-weight: 300;
 }
 
 .volunteering-form .custom-button {
     display: block;
     width: 100%;
+    margin-top: 15px;
 }
 
 .about-volunteer {
@@ -655,6 +659,7 @@ a {
     color: #fff;
     font-size: 1rem;
     font-weight: 200;
+    padding: 0px 25px;
 }
 
 /* RESPONSIVE DESIGN FOR MOBILE DEVICES */
@@ -719,7 +724,7 @@ a {
     }
 
     /* WELCOME SECTION RESPONSIVE */
-    .feature-card-wrapper, .our-mission-wrapper, .our-goal, .causes-wrapper {
+    .feature-card-wrapper, .our-mission-wrapper, .our-goal, .causes-wrapper, .about-volunteering-wrapper, .custom-form {
         grid-template-columns: repeat(1, 1fr);
         row-gap: 40px;
     }
@@ -789,6 +794,47 @@ a {
         bottom: -80px;
         width: 80px;
         height: 80px;
+    }
+
+    /* ABOUT VOLUNTEERING SECTION RESPONSIVE */
+    .about-volunteering::after {
+        width: 200px;
+        height: 200px;
+    }
+
+    .form-title {
+        font-size: 1.3rem;
+    }
+
+    .volunteering-form {
+        padding: 20px 15px;
+    }
+
+    .custom-form {
+        row-gap: 0px;
+    }
+
+    .custom-form input {
+        margin-bottom: 0px;
+    }
+
+    .volunteer-img {
+        width: 150px;
+        height: 150px;
+        margin-left: inherit;
+    }
+
+    .volunteer-content {
+        width: 90%;
+    }
+
+    .about-volunteer-title {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+    }
+
+    .about-volunteer-text {
+        padding: 0px 10px;
     }
 
 }
