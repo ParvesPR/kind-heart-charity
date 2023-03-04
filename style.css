@@ -666,7 +666,7 @@ a {
 .latest-news-wrapper {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 20px;
+    gap: 70px;
 }
 
 .news-block {
@@ -694,8 +694,32 @@ a {
     font-size: 0.9rem;
     font-weight: 400;
 }
-
-
+.search-box{
+    margin-bottom: 40px;
+}
+.search-input {
+    background: #F0F8FF;
+    padding: 1rem;
+    border: none;
+    border-radius: 7px;
+    width: 100%;
+    margin: auto;
+    outline: none;
+}
+.recent-news-wrapper{
+    display: flex;
+    gap: 20px;
+}
+.recent-news-img{
+    width: 150px;
+    border-radius: 10px;
+    height: auto;
+    display: block;
+}
+.recent-news-title{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
 /* RESPONSIVE DESIGN FOR MOBILE DEVICES */
 @media (max-width: 700px) {
     .title {
