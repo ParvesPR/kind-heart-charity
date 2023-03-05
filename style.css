@@ -698,6 +698,7 @@ a {
     margin-right: 10px;
     font-size: 0.9rem;
     font-weight: 400;
+    transition: 0.3s;
 }
 
 .news-block-info {
@@ -705,8 +706,15 @@ a {
     gap: 40px;
 }
 
-.info-icon{
+.info-icon {
     margin-right: 7px;
+}
+
+.news-block-title {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin: 15px 0px 10px 0px;
+    transition: 0.3s;
 }
 
 .search-box {
@@ -743,9 +751,10 @@ a {
 
 .recent-news-title {
     font-size: 1.3rem;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.7rem;
     margin-bottom: 10px;
+    transition: 0.3s;
 }
 
 .recent-news-meta {
@@ -755,6 +764,21 @@ a {
 
 .recent-news-icon {
     color: #57B9A5;
+}
+
+/* HOVER EFFECT */
+.category-link a:hover {
+    color: #57B9A5;
+}
+
+.recent-news-title:hover {
+    color: #57B9A5;
+    cursor: pointer;
+}
+
+.news-block-title:hover {
+    color: #57B9A5;
+    cursor: pointer;
 }
 
 /* RESPONSIVE DESIGN FOR MOBILE DEVICES */
