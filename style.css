@@ -663,15 +663,20 @@ a {
 }
 
 /* LATEST NEWS SECTION CSS */
+.latest-news .title {
+    margin-bottom: 30px;
+}
+
 .latest-news-wrapper {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 70px;
+    gap: 100px;
 }
 
 .news-block {
     position: relative;
     overflow: hidden;
+    margin-bottom: 20px;
 }
 
 .news-block img {
@@ -694,9 +699,20 @@ a {
     font-size: 0.9rem;
     font-weight: 400;
 }
-.search-box{
+
+.news-block-info {
+    display: flex;
+    gap: 40px;
+}
+
+.info-icon{
+    margin-right: 7px;
+}
+
+.search-box {
     margin-bottom: 40px;
 }
+
 .search-input {
     background: #F0F8FF;
     padding: 1rem;
@@ -706,20 +722,41 @@ a {
     margin: auto;
     outline: none;
 }
-.recent-news-wrapper{
+
+.recent-news-block .sub-title {
+    margin-bottom: 20px;
+
+}
+
+.recent-news-wrapper {
     display: flex;
     gap: 20px;
+    margin-bottom: 30px;
 }
-.recent-news-img{
-    width: 150px;
+
+.recent-news-img {
+    width: 200px;
     border-radius: 10px;
     height: auto;
     display: block;
 }
-.recent-news-title{
+
+.recent-news-title {
     font-size: 1.3rem;
     font-weight: 500;
+    line-height: 1.7rem;
+    margin-bottom: 10px;
 }
+
+.recent-news-meta {
+    display: flex;
+    gap: 10px;
+}
+
+.recent-news-icon {
+    color: #57B9A5;
+}
+
 /* RESPONSIVE DESIGN FOR MOBILE DEVICES */
 @media (max-width: 700px) {
     .title {
