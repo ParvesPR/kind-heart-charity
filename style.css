@@ -672,6 +672,9 @@ a {
     grid-template-columns: 2fr 1fr;
     gap: 100px;
 }
+.latest-news-block{
+    margin-bottom: 40px;
+}
 
 .news-block {
     position: relative;
