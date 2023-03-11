@@ -52,7 +52,7 @@ a {
     font-size: 1.1rem;
     font-weight: 400;
     line-height: normal;
-    padding: .90rem 1.6rem;
+    padding: .80rem 1.6rem;
     letter-spacing: 0.5px;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
@@ -676,6 +676,7 @@ a {
 .latest-news-block {
     margin-bottom: 40px;
 }
+
 .latest-news .sub-title {
     margin-bottom: 20px;
 }
@@ -724,11 +725,11 @@ a {
     transition: 0.3s;
 }
 
-.search-box {
+.input {
     margin-bottom: 40px;
 }
 
-.search-input {
+.input-box {
     background: #F0F8FF;
     padding: 1rem;
     border: none;
@@ -736,6 +737,10 @@ a {
     width: 100%;
     margin: auto;
     outline: none;
+}
+
+.recent-news-block, .category-block {
+    margin-bottom: 40px;
 }
 
 .recent-news-wrapper {
@@ -770,7 +775,7 @@ a {
 
 .category-list li {
     list-style: none;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-size: 0.85rem;
     font-weight: 300;
     color: #597081;
@@ -788,6 +793,40 @@ a {
     text-align: center;
     line-height: 18px;
     font-size: 0.6rem;
+}
+
+.tag-button {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 8px;
+}
+
+.tag-button a {
+    margin-right: 17px;
+    color: #5A6F80;
+    font-weight: 300;
+    font-size: 0.8rem;
+    border: 1px solid #E9EAEB;
+    padding: 6px 15px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.newsletter-form {
+    background: #F0F8FF;
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+
+.newsletter-form .custom-button {
+    display: block;
+    width: 100%;
+}
+
+.newsletter-form .input-box {
+    background: #fff;
 }
 
 /* HOVER EFFECT */
@@ -808,6 +847,11 @@ a {
 .category-list li:hover {
     color: #57B9A5;
     cursor: pointer;
+}
+
+.tag-button a:hover {
+    color: #000;
+    border: 1px solid #000;
 }
 
 /* RESPONSIVE DESIGN FOR MOBILE DEVICES */
