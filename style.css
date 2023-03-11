@@ -705,7 +705,7 @@ a {
     color: #fff;
     margin-right: 10px;
     font-size: 0.9rem;
-    font-weight: 400;
+    font-weight: 300;
     transition: 0.3s;
 }
 
@@ -792,7 +792,7 @@ a {
     display: inline-block;
     text-align: center;
     line-height: 18px;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
 }
 
 .tag-button {
@@ -916,7 +916,7 @@ a {
     }
 
     /* WELCOME SECTION RESPONSIVE */
-    .feature-card-wrapper, .our-mission-wrapper, .our-goal, .causes-wrapper, .about-volunteering-wrapper, .custom-form {
+    .feature-card-wrapper, .our-mission-wrapper, .our-goal, .causes-wrapper, .about-volunteering-wrapper, .custom-form, .latest-news-wrapper {
         grid-template-columns: repeat(1, 1fr);
         row-gap: 40px;
     }
@@ -1029,4 +1029,16 @@ a {
         padding: 0px 10px;
     }
 
+    /* LATEST NEWS SECTION RESPONSIVE */
+    .news-block-title {
+        font-size: 1.3rem;
+    }
+    .recent-news-img {
+        width: 150px
+    }
+
+    .recent-news-title {
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
 }
