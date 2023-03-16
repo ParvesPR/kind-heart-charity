@@ -1009,6 +1009,33 @@ a {
     color: burlywood;
 }
 
+.contact-address .custom-button {
+    margin-top: 25px;
+}
+
+.contact-form {
+    background: #F0F8FF;
+    padding: 40px;
+    border-radius: 25px;
+}
+
+.contact-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.contact-input {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.contact-input-wrapper .input-box, textarea {
+    background: #fff;
+}
+
 /* HOVER EFFECT */
 .contact-address p:hover {
     color: #5BC1AC;
