@@ -855,6 +855,35 @@ a {
 }
 
 /* CUSTOMERS FEEDBACK SECTION CSS */
+.customers-feedback {
+    background: #F0F8FF;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.customers-feedback::before {
+    content: "";
+    position: absolute;
+    left: -35px;
+    top: -105px;
+    width: 250px;
+    height: 250px;
+    background: #5BC1AC;
+    border-radius: 50%;
+}
+
+.customers-feedback::after {
+    content: "";
+    position: absolute;
+    right: -70px;
+    bottom: -129px;
+    width: 350px;
+    height: 350px;
+    background: #597081;
+    border-radius: 50%;
+}
+
 .customers-feedback .title {
     text-align: center;
     margin-bottom: 40px;
@@ -1115,5 +1144,62 @@ a {
     .recent-news-title {
         font-size: 1.1rem;
         font-weight: 500;
+    }
+
+    /* CUSTOMERS FEEDBACK SECTION RESPONSIVE */
+    .customers-feedback .title {
+        margin-bottom: 20px;
+    }
+
+    .customers-feedback::before {
+        left: -45px;
+        width: 180px;
+        height: 180px;
+    }
+
+    .customers-feedback::after {
+        right: -45px;
+        bottom: -135px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .feedback {
+        width: 100%;
+        font-weight: 500;
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+    }
+
+    .feedback-text {
+        margin-bottom: 10px;
+    }
+
+    .customers::before {
+        content: "Thomas Partner";
+        position: absolute;
+        top: -50px;
+        left: 0;
+        right: 0;
+        background: #5BC1AC;
+        color: #fff;
+        width: 150px;
+        padding: 5px;
+        font-size: 0.9rem;
+        text-align: center;
+        margin: auto;
+        border: 1px solid #5BC1AC;
+        border-radius: 50px;
+    }
+
+    .customers::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: -60px;
+        border-style: solid;
+        border-width: 0 10px 10px 10px;
+        border-color: transparent transparent #5BC1AC transparent;
     }
 }
