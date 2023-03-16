@@ -957,6 +957,64 @@ a {
     opacity: 1;
 }
 
+/* GET IN TOUCH SECTION */
+
+.get-in-touch-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+
+.contact-info {
+    padding: 30px;
+}
+
+.manager-info {
+    margin: 25px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 25px;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 25px;
+}
+
+.manager-info img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.position {
+    font-weight: 600;
+    color: #597081;
+}
+
+.contact-address .sub-title {
+    margin-bottom: 20px;
+}
+
+.contact-address p {
+    margin-bottom: 8px;
+    color: #717275;
+    font-weight: 300;
+    transition: 0.3s;
+}
+
+.contact-address p span {
+    margin-right: 5px;
+    color: burlywood;
+}
+
+/* HOVER EFFECT */
+.contact-address p:hover {
+    color: #5BC1AC;
+    cursor: pointer;
+}
+
 /* RESPONSIVE DESIGN FOR MOBILE DEVICES */
 @media (max-width: 700px) {
     .title {
@@ -1173,33 +1231,5 @@ a {
 
     .feedback-text {
         margin-bottom: 10px;
-    }
-
-    .customers::before {
-        content: "Thomas Partner";
-        position: absolute;
-        top: -50px;
-        left: 0;
-        right: 0;
-        background: #5BC1AC;
-        color: #fff;
-        width: 150px;
-        padding: 5px;
-        font-size: 0.9rem;
-        text-align: center;
-        margin: auto;
-        border: 1px solid #5BC1AC;
-        border-radius: 50px;
-    }
-
-    .customers::after {
-        content: "";
-        position: absolute;
-        width: 0;
-        height: 0;
-        top: -60px;
-        border-style: solid;
-        border-width: 0 10px 10px 10px;
-        border-color: transparent transparent #5BC1AC transparent;
     }
 }
