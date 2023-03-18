@@ -1042,6 +1042,61 @@ a {
     cursor: pointer;
 }
 
+/* FOOTER SECTION CSS */
+.footer {
+    background: #44525D;
+}
+
+.top-footer {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr;
+    padding: 50px 0px;
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+}
+
+.top-footer .sub-title {
+    margin-bottom: 20px;
+}
+
+.footer-img {
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+
+.footer-title, .footer-sub-title {
+    color: #5BC1AC;
+}
+
+ul.footer-list {
+    column-count: 2;
+}
+
+ul.footer-list li {
+    color: #fff;
+    list-style: none;
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+
+.top-footer p {
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.top-footer span {
+    margin-right: 10px;
+}
+
+.top-footer .custom-button {
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
 /* RESPONSIVE DESIGN FOR MOBILE DEVICES */
 @media (max-width: 700px) {
     .title {
