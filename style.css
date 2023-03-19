@@ -1097,6 +1097,50 @@ ul.footer-list li {
     font-weight: 300;
 }
 
+.bottom-footer {
+    background: #5a6f80;
+    padding: 40px;
+}
+
+.bottom-footer .container {
+    margin: 0px auto;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-footer p {
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.footer-icon {
+    margin: auto;
+}
+
+.footer-icon span {
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    background: #44525d;
+    border-radius: 100%;
+    display: inline-block;
+    text-align: center;
+    line-height: 38px;
+    margin-left: 10px;
+    transition: all 0.4s ease-in-out;
+}
+
+/* HOVER EFFECT */
+.footer-icon span:hover {
+    cursor: pointer;
+    background: #5BC1AC;
+    transform: scale(1.2);
+}
+
 /* RESPONSIVE DESIGN FOR MOBILE DEVICES */
 @media (max-width: 700px) {
     .title {
