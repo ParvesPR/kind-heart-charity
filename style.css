@@ -1099,7 +1099,7 @@ ul.footer-list li {
 
 .bottom-footer {
     background: #5a6f80;
-    padding: 40px;
+    padding: 30px;
 }
 
 .bottom-footer .container {
@@ -1194,7 +1194,6 @@ ul.footer-list li {
         text-align: center;
         background-color: white;
         transition: all 0.5s ease-in-out;
-
     }
 
     .navBar ul li {
@@ -1203,7 +1202,7 @@ ul.footer-list li {
     }
 
     /* WELCOME SECTION RESPONSIVE */
-    .feature-card-wrapper, .our-mission-wrapper, .our-goal, .causes-wrapper, .about-volunteering-wrapper, .custom-form, .latest-news-wrapper {
+    .feature-card-wrapper, .our-mission-wrapper, .our-goal, .causes-wrapper, .about-volunteering-wrapper, .custom-form, .latest-news-wrapper, .top-footer {
         grid-template-columns: repeat(1, 1fr);
         row-gap: 40px;
     }
@@ -1372,5 +1371,25 @@ ul.footer-list li {
 
     .contact-input {
         flex-direction: column;
+    }
+
+    /* FOOTER SECTION RESPONSIVE */
+    .top-footer {
+        justify-items: start;
+    }
+
+    .footer-img {
+        margin: left auto;
+    }
+
+    .footer-wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        text-align: center;
+    }
+
+    .footer-icon span {
+        line-height: 35px;
     }
 }
