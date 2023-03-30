@@ -130,7 +130,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 60px;
+    margin: 0px 60px;
 }
 
 .nav-title-wrapper {
@@ -170,18 +170,19 @@ a {
     display: none;
 }
 
-.navBar ul {
+ul.menu {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.navBar ul li {
+ul.menu li {
+    position: relative;
     list-style: none;
     margin-right: 40px;
 }
 
-.navBar ul li a {
+ul.menu li a {
     font-size: 16px;
     color: #3a3a3a;
     font-weight: 400;
@@ -189,7 +190,7 @@ a {
     padding-bottom: 6px;
 }
 
-.navBar ul li a::after {
+ul.menu li a::after {
     content: "";
     position: absolute;
     left: 0;
@@ -208,13 +209,54 @@ a {
     transition: 0.5s;
 }
 
+/* DROPDOWN MENU */
+ul.dropdown {
+    list-style: none;
+    width: 200px;
+    position: absolute;
+    left: -19px;
+    top: 51px;
+    background: #14141491;
+    border-top: 1px solid #fff;
+    transform: scaleY(0);
+    opacity: 0;
+    transform-origin: top;
+    transition: .2s;
+    transition-timing-function: ease-out;
+    z-index: 11111111111;
+}
+
+ul.dropdown li {
+    width: 200px;
+    padding: 8px 20px;
+    color: #fff;
+}
+
+ul.dropdown li a {
+    display: inline-block;
+    color: #fff;
+    font-size: 15px;
+    text-transform: capitalize;
+    position: relative;
+}
+
 /* HOVER EFFECT */
-.navBar ul li a:hover::after {
+ul.menu li a:hover::after {
     width: 100%;
 }
 
 .nav-button:hover {
     transform: scale(1.2);
+}
+
+ul.menu li:hover ul.dropdown {
+    transform: scaley(1.0);
+    opacity: 1;
+    z-index: 1111111;
+}
+
+ul.dropdown li a:hover {
+    display: inline-block;
 }
 
 /* BANNER SECTION */
@@ -1216,7 +1258,7 @@ ul.footer-list li {
         box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 15%);
     }
 
-    .navBar ul {
+    ul.menu {
         padding: 15px 0px;
         position: fixed;
         top: 160px;
@@ -1230,7 +1272,7 @@ ul.footer-list li {
         transition: all 0.5s ease-in-out;
     }
 
-    .navBar ul li {
+    ul.menu li {
         margin-bottom: 10px;
         margin-right: 0px;
     }
