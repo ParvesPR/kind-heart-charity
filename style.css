@@ -223,7 +223,7 @@ ul.dropdown {
     transform-origin: top;
     transition: .2s;
     transition-timing-function: ease-out;
-    z-index: 11111111111;
+    z-index: 111;
 }
 
 ul.dropdown li {
@@ -252,7 +252,7 @@ ul.menu li a:hover::after {
 ul.menu li:hover ul.dropdown {
     transform: scaley(1.0);
     opacity: 1;
-    z-index: 1111111;
+    z-index: 11;
 }
 
 ul.dropdown li a:hover {
@@ -1247,6 +1247,7 @@ ul.footer-list li {
     .navBar {
         margin: 5px 20px;
         justify-content: space-between;
+        z-index: 999;
     }
 
     .nav-toggler-icon {
@@ -1256,6 +1257,7 @@ ul.footer-list li {
     #nav-toggler:checked~ul {
         left: 0%;
         box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 15%);
+        z-index: 9999;
     }
 
     ul.menu {
@@ -1268,15 +1270,31 @@ ul.footer-list li {
         margin: auto;
         display: block;
         text-align: center;
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.804);
         transition: all 0.5s ease-in-out;
+        z-index: 99999;
     }
 
     ul.menu li {
         margin-bottom: 10px;
         margin-right: 0px;
     }
-
+    ul.dropdown {
+        width: 150px;
+        margin: auto;
+        left: 170px;
+        top: 35px;
+        background: #000000;
+        border-top: 1px solid #000000;
+        z-index: 111;
+    }
+    ul.dropdown li {
+        width: 100px;
+        margin: auto;
+        padding: 5px 10px;
+        color: #fff;
+    }
+    
     /* BANNER SECTION RESPONSIVE */
     .banner-img {
         height: 480px;
